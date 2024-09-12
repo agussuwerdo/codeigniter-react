@@ -62,4 +62,9 @@ class Hello extends CI_Controller
 	{
 		echo base_url('product');
 	}
+
+	public function base_url()
+	{
+		echo base_url();
+	}
 }

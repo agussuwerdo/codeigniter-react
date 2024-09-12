@@ -25,7 +25,7 @@ services:
     image: php:7.4-apache
     container_name: codeigniter_react_php
     volumes:
-      - ./:/var/www/html
+      - ./backend/:/var/www/html
       - ./apache/logs:/var/log/apache2
     ports:
       - "7070:80" # Changed port to avoid conflict with mi_ecommerce

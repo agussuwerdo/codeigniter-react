@@ -218,13 +218,13 @@ if (! is_dir($system_path)) {
  * -------------------------------------------------------------------
  */
 /**
- * Define APP_URL Dynamically
+ * Define BACKEND_URL Dynamically
  * Write this at the bottom of index.php
  *
  * Automatic base url
  */
 
-$root = getenv('APP_URL') ?: '';
+$root = getenv('BACKEND_URL') ?: '';
 if (PHP_SAPI !== 'cli') {
 	$root = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ||
 		(isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')

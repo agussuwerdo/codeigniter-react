@@ -41,8 +41,8 @@ logs:
 # Restart services
 restart: down up
 
-# Access the Postgres container's shell
-postgres-shell:
+# Access the DB container's shell
+db-shell:
 	$(DOCKER_COMPOSE) exec $(DB_CONTAINER) bash
 
 # Display help
@@ -57,4 +57,4 @@ help:
 	@echo "  clear-cache       Clear the application cache"
 	@echo "  logs              View logs from Docker containers"
 	@echo "  restart           Restart Docker containers"
-	@echo "  postgres-shell    Access the PostgreSQL container's shell"
+	@echo "  db-shell    			 Access the db container's shell"

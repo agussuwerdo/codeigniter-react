@@ -87,3 +87,8 @@
 [Thu Sep 12 11:20:53.796392 2024] [core:error] [pid 27] [client 192.168.65.1:63301] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace., referer: http://localhost:7070/
 [Thu Sep 12 11:20:55.384302 2024] [core:error] [pid 26] [client 192.168.65.1:63300] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace., referer: http://localhost:7070/api/
 [Thu Sep 12 11:20:56.346751 2024] [core:error] [pid 18] [client 192.168.65.1:63303] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace., referer: http://localhost:7070/
+[Thu Sep 12 22:59:16.403408 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Thu Sep 12 22:59:16.403830 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Sep 12 23:00:24.470559 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Sep 12 23:00:27.546723 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Thu Sep 12 23:00:27.546909 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
