@@ -1,0 +1,35 @@
+volumes:
+  codeigniter_react_db_data:
+
+services:
+  codeigniter_react_mysql:
+    image: mysql:8.0
+    restart: no
+    container_name: codeigniter_react_db
+    env_file:
+      - .env
+    volumes:
+      - ./codeigniter-react-db-data:/var/lib/mysql
+    ports:
+      - "3307:3306" # Changed port to avoid conflict with mi_ecommerce
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+
+  codeigniter_react_app:
+    build:
+      context: .
+      dockerfile: apache/Dockerfile
+    image: php:7.4-apache
+    container_name: codeigniter_react_php
+    volumes:
+      - ./:/var/www/html
+      - ./apache/logs:/var/log/apache2
+    ports:
+      - "7070:80" # Changed port to avoid conflict with mi_ecommerce
+    depends_on:
+      - codeigniter_react_mysql
+    env_file:
+      - .env

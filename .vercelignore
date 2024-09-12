@@ -1,0 +1,29 @@
+# Ignore all node_modules directories
+/frontend/node_modules/
+/client/node_modules/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore local environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore build and cache folders
+/client/build/
+/build/
+.cache/
+
+# Ignore frontend source files if you only want to deploy the build output
+/frontend/src/
+
+# codeigniter
+
+!/backend/application/cache/index.html
+/backend/application/cache/sessions/*
+!/backend/application/cache/sessions/index.html
+
+/codeigniter-react-db-data
