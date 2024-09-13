@@ -745,3 +745,5 @@ localhost:80 192.168.65.1 - - [12/Sep/2024:23:29:34 +0000] "GET /product HTTP/1.
 localhost:80 192.168.65.1 - - [12/Sep/2024:23:30:48 +0000] "GET /product HTTP/1.1" 500 1351 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 localhost:80 192.168.65.1 - - [12/Sep/2024:23:30:49 +0000] "GET /product HTTP/1.1" 500 1351 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 localhost:80 192.168.65.1 - - [12/Sep/2024:23:30:56 +0000] "GET /product HTTP/1.1" 200 251 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+localhost:80 192.168.65.1 - - [13/Sep/2024:01:37:23 +0000] "GET / HTTP/1.1" 200 1226 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+localhost:80 192.168.65.1 - - [13/Sep/2024:01:38:15 +0000] "-" 408 0 "-" "-"
