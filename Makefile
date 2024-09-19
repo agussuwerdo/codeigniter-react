@@ -45,6 +45,9 @@ restart: down up
 db-shell:
 	$(DOCKER_COMPOSE) exec $(DB_CONTAINER) bash
 
+deploy:
+	@cd frontend && npm run build && cd .. && vercel --prod
+
 # Display help
 help:
 	@echo "Makefile commands:"
@@ -58,3 +61,4 @@ help:
 	@echo "  logs              View logs from Docker containers"
 	@echo "  restart           Restart Docker containers"
 	@echo "  db-shell    			 Access the db container's shell"
+	@echo "  deploy	    			 build frontend and deploy to vercel"
