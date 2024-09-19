@@ -6,11 +6,18 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/index.php"
+      "source": "/api/(.*)",
+      "destination": "/api/index.php"
     },
-    { "src": "/(.*)", "dest": "/frontend/build/$1" }
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/build/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/build/"
+    }
   ]
 }
