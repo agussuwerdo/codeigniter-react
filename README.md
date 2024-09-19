@@ -1,23 +1,23 @@
 
 # CodeIgniter with React - Vercel Deployment
 
-This project is a web application built using **CodeIgniter 3** as the backend framework and **React** for the frontend. The project is deployed on Vercel with separate URLs for the frontend and backend API.
+This boilerplate project is a web application built using **CodeIgniter 3** as the backend framework and **React** for the frontend. The project is deployed on Vercel with separate URLs for the frontend and backend API.
 
 ## Demo Links
 
 - **Frontend**: [https://codeigniter-react.vercel.app](https://codeigniter-react.vercel.app)
 - **Backend API**: [https://codeigniter-react.vercel.app/api](https://codeigniter-react.vercel.app/api)
-
+- **PHPINFO**: [https://codeigniter-react.vercel.app/api/phpinfo](https://codeigniter-react.vercel.app/api/phpinfo)
 ## Project Structure
 
 - **Frontend (React)**: Located inside the `frontend/` directory. This handles the client-side UI and interacts with the backend via API calls.
-- **Backend (CodeIgniter)**: The `api/` directory contains the CodeIgniter PHP files responsible for handling the API logic.
+- **Backend (CodeIgniter)**: The `backend/` directory contains the CodeIgniter PHP files responsible for handling the API logic.
 
 ### Folder Layout:
 
 ```
 .
-├── backend/                # CodeIgniter backend for handling API requests
+├── backend/            # CodeIgniter backend for handling API requests
 │   ├── application/    # CodeIgniter application logic (controllers, models, views)
 │   └── system/         # CodeIgniter system files
 ├── frontend/           # React frontend application
@@ -64,7 +64,12 @@ This project is a web application built using **CodeIgniter 3** as the backend f
 
 3. **API Testing**:
 
-   You can access the API endpoints via `http://localhost/<your-api-path>` when running locally.
+   You can modify the API endpoints through the `.env` file when running locally.
+   set the `REACT_APP_API_URL` in the `.env` file inside frontend folder.
+
+4. **Docker**:
+
+    Refer to Makefile to run the app trough Docker.
 
 ## Deployment
 
@@ -80,7 +85,7 @@ The project is deployed to Vercel. Below is the configuration used in the `verce
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/api/(.*)", "dest": "/api/index.php" },
     { "src": "/(.*)", "dest": "/frontend/build/$1" }
   ]
 }
@@ -93,6 +98,10 @@ The project is deployed to Vercel. Below is the configuration used in the `verce
 ### Backend Deployment
 
 - The CodeIgniter backend is deployed under `api/` and accessible at the `/api/` route.
+
+### Vercel Deployment
+
+- Run `Make deploy` from the root directory
 
 ## API Documentation
 
