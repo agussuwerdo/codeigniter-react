@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Hello extends CI_Controller
+class Debug extends CI_Controller
 {
 
 	/**
@@ -21,7 +21,7 @@ class Hello extends CI_Controller
 	 */
 	public function index()
 	{
-		echo phpinfo();
+		echo "debug controller called";
 	}
 
 	public function env()
