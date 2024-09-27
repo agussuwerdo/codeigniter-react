@@ -17,7 +17,11 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
-    libonig-dev
+    libonig-dev \
+    pkg-config \
+    libssl-dev \
+    libz-dev \
+    && apt-get clean
 
 # Install PHP extensions
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
@@ -26,11 +30,22 @@ RUN docker-php-ext-install \
     mysqli \
     pdo \
     pdo_mysql \
+    pdo_pgsql \
     bz2 \
     intl \
     bcmath \
     opcache \
     calendar
+
+# Install Redis PHP extension if not already installed
+RUN if ! php -m | grep -q 'redis'; then \
+    pecl install redis && docker-php-ext-enable redis; \
+    fi
+
+# Install APCu PHP extension if not already installed
+RUN if ! php -m | grep -q 'apcu'; then \
+    pecl install apcu && docker-php-ext-enable apcu; \
+    fi
 
 # Enable imagick if necessary
 # RUN pecl install imagick

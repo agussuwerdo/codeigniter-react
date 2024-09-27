@@ -92,3 +92,77 @@
 [Thu Sep 12 23:00:24.470559 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 [Thu Sep 12 23:00:27.546723 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
 [Thu Sep 12 23:00:27.546909 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 09:40:56.896221 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 09:40:56.896671 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 13:05:53.090697 2024] [php7:error] [pid 20] [client 192.168.65.1:46215] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:09:04.796061 2024] [php7:error] [pid 22] [client 192.168.65.1:47433] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:09:05.506912 2024] [php7:error] [pid 18] [client 192.168.65.1:47435] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:09:05.840748 2024] [php7:error] [pid 19] [client 192.168.65.1:47436] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:09:06.009844 2024] [php7:error] [pid 20] [client 192.168.65.1:47437] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:09:51.629271 2024] [php7:error] [pid 22] [client 192.168.65.1:47759] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:09:52.214643 2024] [php7:error] [pid 17] [client 192.168.65.1:47760] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:10:28.192385 2024] [php7:error] [pid 19] [client 192.168.65.1:48018] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:10:28.837785 2024] [php7:error] [pid 20] [client 192.168.65.1:48019] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:11:06.575853 2024] [php7:error] [pid 22] [client 192.168.65.1:48213] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:11:07.149518 2024] [php7:error] [pid 17] [client 192.168.65.1:48214] PHP Fatal error:  Type of Product_model::$table must be string (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 13:11:51.431165 2024] [php7:error] [pid 19] [client 192.168.65.1:48536] PHP Fatal error:  Type of Product_model::$primaryKey must not be defined (as in class MY_Model) in /var/www/html/application/models/Product_model.php on line 0
+[Fri Sep 20 14:02:11.544464 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:02:17.010479 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:02:17.011192 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:03:12.038346 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:03:15.460684 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:03:15.460885 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:08:04.680109 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:08:09.128487 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:08:09.129052 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:10:25.221744 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:10:29.300527 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:10:29.301017 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:10:56.592116 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:10:59.892954 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:10:59.894461 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:11:20.818186 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:11:24.451145 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:11:24.453131 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:13:02.087584 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:13:05.151329 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:13:05.152938 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:22:09.253802 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:22:12.766668 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:22:12.767194 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 14:26:35.619418 2024] [php7:error] [pid 21] [client 192.168.65.1:30275] PHP Fatal error:  Constant expression contains invalid operations in /var/www/html/application/migrations/20240905150123_create_sessions_table.php on line 5
+[Fri Sep 20 14:35:50.090054 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 14:35:55.218258 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 14:35:55.218866 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 15:47:12.901928 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 15:47:19.503899 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 15:47:19.504241 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 15:48:03.014763 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 15:48:06.039748 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 15:48:06.041038 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 15:48:52.674828 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 15:48:56.665575 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 15:48:56.666589 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 15:51:20.737096 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 20 15:51:24.768721 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 20 15:51:24.768954 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 20 16:02:40.259114 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Mon Sep 23 02:16:31.634443 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Mon Sep 23 02:16:31.635039 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Sep 23 02:17:54.649683 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Mon Sep 23 02:17:58.438939 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Mon Sep 23 02:17:58.439220 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Sep 25 13:15:26.257120 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Wed Sep 25 13:15:26.257398 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Sep 26 12:39:07.361450 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Sep 26 12:41:21.674864 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Thu Sep 26 12:41:21.675559 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Sep 26 13:30:48.194721 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Sep 26 13:30:52.654308 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Thu Sep 26 13:30:52.654548 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Sep 26 15:47:08.330756 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Sep 26 15:52:23.510253 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Thu Sep 26 15:52:23.510542 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Sep 27 10:26:18.500164 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Sep 27 10:26:24.255686 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/7.4.33 configured -- resuming normal operations
+[Fri Sep 27 10:26:24.255909 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

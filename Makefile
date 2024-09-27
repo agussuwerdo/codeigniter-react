@@ -6,6 +6,12 @@ DB_CONTAINER = codeigniter_react_mysql
 # Default target
 all: help
 
+dev:
+	@cd frontend && npm run dev
+
+build:
+	$(DOCKER_COMPOSE) build
+
 # Start services
 up:
 	$(DOCKER_COMPOSE) up -d
@@ -51,6 +57,7 @@ deploy:
 # Display help
 help:
 	@echo "Makefile commands:"
+	@echo "  build             Build Docker containers"
 	@echo "  up                Start Docker containers"
 	@echo "  down              Stop Docker containers"
 	@echo "  shell             Access the PHP container's shell"

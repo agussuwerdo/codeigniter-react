@@ -1,21 +1,26 @@
 .DS_Store
 
-!application/cache/index.html
-application/cache/sessions/*
-!application/cache/sessions/index.html
+!/backend/application/cache/index.html
+/backend/application/cache/sessions/*
+!/backend/application/cache/sessions/index.html
 
-application/logs/*
-!application/logs/index.html
+/backend/application/logs/*
+!/backend/application/logs/index.html
 
-!application/*/.htaccess
+!/backend/application/*/.htaccess
 
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
-/vendor/
+/backend/user_guide_src/build/*
+/backend/user_guide_src/cilexer/build/*
+/backend/user_guide_src/cilexer/dist/*
+/backend/user_guide_src/cilexer/pycilexer.egg-info/*
+/backend/vendor/
 
-.env
+# Ignore all files that start with .env
+.env*
+
+# Exclude the .env.sample file
+!.env.sample
+
 # IDE Files
 #-------------------------
 /nbproject/

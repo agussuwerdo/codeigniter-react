@@ -284,4 +284,57 @@ class CI_Cache_file extends CI_Driver {
 		return $data;
 	}
 
+	/**
+	 * Get all cached data
+	 *
+	 * This method will retrieve all cache files in the cache directory
+	 * and return their contents.
+	 *
+	 * @return array Cached data
+	 */
+	public function get_all_cache()
+	{
+		$all_cache = [];
+		$files = get_filenames($this->_cache_path);
+
+		if ($files !== FALSE) {
+			foreach ($files as $file) {
+				// Skip index.html or any other specific files you want to exclude
+				if ($file === 'index.html') {
+					continue;
+				}
+				$full_path = $this->_cache_path . $file;
+
+				// Ensure it's a file and is readable
+				if (is_file($full_path) && is_readable($full_path)) {
+					$file_content = file_get_contents($full_path);
+
+					// Check if the content is valid and unserializable
+					if ($file_content !== false && $this->is_serialized($file_content)) {
+						$data = unserialize($file_content);
+						// Only include valid cache entries
+						if (
+							isset($data['ttl'], $data['time'], $data['data']) &&
+							($data['ttl'] === 0 || time() <= $data['time'] + $data['ttl'])
+						) {
+							$all_cache[$file] = $data['data'];
+						}
+					}
+				}
+			}
+		}
+
+		return $all_cache;
+	}
+	
+	/**
+	 * Check if a string is a valid serialized data
+	 * 
+	 * @param string $data
+	 * @return bool
+	 */
+	private function is_serialized($data)
+	{
+			return ($data === 'b:0;' || @unserialize($data) !== false);
+	}
 }

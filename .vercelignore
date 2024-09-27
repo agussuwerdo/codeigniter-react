@@ -5,6 +5,8 @@
 # Ignore logs and temp files
 *.log
 *.tmp
+/backend/application/logs/*
+!/backend/application/logs/index.html
 
 # Ignore local environment files
 .env
@@ -16,6 +18,7 @@
 /client/build/
 /build/
 .cache/
+/backend/application/cache/
 
 # Ignore frontend source files if you only want to deploy the build output
 /frontend/src/

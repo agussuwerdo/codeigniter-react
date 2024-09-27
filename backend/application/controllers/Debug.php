@@ -67,4 +67,74 @@ class Debug extends CI_Controller
 	{
 		echo base_url();
 	}
+
+	public function set_cache($cacheKey)
+	{
+		// Retrieve the raw input stream
+		$input = $this->input->raw_input_stream;
+
+		// Attempt to decode the input as JSON
+		$data = json_decode($input, true);
+
+		// Check if JSON decoding failed
+		if (json_last_error() === JSON_ERROR_NONE) {
+			// If it's valid JSON, save the decoded array
+			$cacheData = $data;
+		} else {
+			// If it's not valid JSON, save the raw input string
+			$cacheData = $input;
+		}
+
+		$this->load->model('product_model');
+
+		try {
+			// Code that might throw an exception or error
+			$this->product_model->save_cache($cacheKey, $cacheData);
+		} catch (ExceptionType $e) {
+			// Code to handle the exception
+			log_message('error', 'Failed to save cache for key: ' . $cacheKey);
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+			error('Failed to save cache', 500); // Show a 500 Internal Server Error
+		}
+	}
+
+	public function get_cache($cacheKey)
+	{
+		// $this->load->library('Cache_kv');
+		$this->load->model('product_model');
+		$cacheValue = $this->product_model->get_cache($cacheKey);
+
+		if (!is_array($cacheValue)) {
+			echo ($cacheValue);
+		} else {
+			// Set the content type to application/json and output the data
+			$this->output
+				->set_content_type('application/json')
+				->set_output(json_encode($cacheValue));
+		}
+	}
+
+	public function delete_cache($prefix = '')
+	{
+		$this->load->model('product_model');
+		echo $this->product_model->delete_cache_by_prefix($prefix);
+	}
+
+	public function clean_cache()
+	{
+		$this->load->model('product_model');
+		echo $this->product_model->clean_cache();
+	}
+
+	public function all_cache()
+	{
+		$this->load->model('product_model');
+		$data = $this->product_model->all_cache();
+		success($data);
+		// echo json_encode($data, JSON_PRETTY_PRINT);
+	}
+	public function cache_info($key)
+	{
+		print_r(apcu_key_info($key));
+	}
 }
